@@ -29,33 +29,40 @@ body {
 }
 
 header {
+  box-sizing: content-box;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #ecece5;
-  padding: 10px 0;
+  padding: 10px;
   color: #18171d;
-  height: 5vw;
+  height: 7vh;
 }
 
 footer {
+  box-sizing: content-box;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
-  padding: 0.5em;
+  justify-content: space-between;
+  padding: 10px;
   background-color: #ecece5;
   color: #18171d;
+  height: 5vh;
+}
+
+footer > * {
+  font-size: 1rem;
 }
 
 #title {
   font-size: 1.rem;
 }
 
-#imw-logo {
-  width: 8vw;
-  max-height: 9vh;
+#imw-logo, .header-hidden {
+  width: 8.1vw;
+  max-height: 8vh;
 }
 
 #under-construction {
@@ -77,9 +84,30 @@ footer {
   visibility: hidden;
 }
 
+.footer-hidden {
+  width: 15vw;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.social-media-icons > a {
+  display:inline-block;
+}
+
+a > img {
+  width: 5vw;
+  max-height: 3.5vh;
+}
+
 @media screen and (max-width: 1300px) {
-  #imw-logo {
-    width: 4vw;
+  #imw-logo, .header-hidden {
+    width: 7.5vw;
+    max-height: 8vh;
+  }
+  footer > * {
+    font-size: 0.9rem;
   }
 }
 
@@ -87,22 +115,49 @@ footer {
   #title {
     font-size: 1.5rem;
   }
+  #imw-logo, .header-hidden {
+    width: 7.5vw;
+    max-height: 7vh;
+  }
 }
 
 @media screen and (max-width: 800px) {
   #title {
     font-size: 1.3rem;
   }
+  #imw-logo, .header-hidden {
+    width: 8.1vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
   #title {
     font-size: 1.1rem;
+    max-width: 230px;
+    text-align: center;
+  }
+  #address {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  #imw-logo, .header-hidden {
+    width: 8vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   #title {
     font-size: 0.9rem;
+    max-width: 180px;
+    text-align: center;
+  }
+  #address {
+    max-width: 250px;
+    text-align: center;
+  }
+  #imw-logo, .header-hidden {
+    width: 8.1vw;
   }
 }
+
