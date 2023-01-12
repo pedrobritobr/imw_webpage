@@ -36,7 +36,7 @@ header {
   background-color: #ecece5;
   padding: 10px 0;
   color: #18171d;
-  height: fit-content;
+  height: 5vw;
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
 }
 
 #title {
-  font-size: 1.8rem;
+  font-size: 1.rem;
 }
 
 #imw-logo {
@@ -77,15 +77,27 @@ footer {
   visibility: hidden;
 }
 
-@media screen and (max-width: 800px) {
-  #title {
-    font-size: 1.6rem;
+@media screen and (max-width: 1300px) {
+  #imw-logo {
+    width: 4vw;
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 1000px) {
   #title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #title {
+    font-size: 1.1rem;
   }
 }
 
