@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/optima/OptimaLTPro-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/futura/FuturaLTProMedium.otf');
+}
+
+* {
+    background-color: rgb(9, 12, 34);
+    /* font-family: 'FuturaLTProDisplay'; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#title {
+  color: rgb(241, 238, 231);
+  font-family: 'Futura';
+}
+
+#imw-logo {
+  width: 25vw;
+}
