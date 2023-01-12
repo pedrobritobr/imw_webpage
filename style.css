@@ -30,13 +30,13 @@ body {
 
 header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
   background-color: #ecece5;
   padding: 10px 0;
   color: #18171d;
-  height: 8vh;
+  height: fit-content;
 }
 
 footer {
@@ -50,13 +50,12 @@ footer {
 }
 
 #title {
-  height: 80%;
-  font-size: 1.5em;
+  font-size: 1.8rem;
 }
 
 #imw-logo {
-  height: 100%;
   width: 8vw;
+  max-height: 9vh;
 }
 
 #under-construction {
@@ -76,4 +75,22 @@ footer {
 
 .hidden {
   visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  #title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 0.9rem;
+  }
 }
