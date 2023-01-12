@@ -50,6 +50,10 @@ footer {
   color: #18171d;
 }
 
+footer > * {
+  font-size: 1rem;
+}
+
 #title {
   font-size: 1.rem;
 }
@@ -80,11 +84,11 @@ footer {
 
 @media screen and (max-width: 1300px) {
   #imw-logo {
-    width: 4vw;
-  }
-  #imw-logo {
     width: 7.5vw;
     max-height: 8vh;
+  }
+  footer > * {
+    font-size: 0.9rem;
   }
 }
 
