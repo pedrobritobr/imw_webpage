@@ -14,7 +14,7 @@
 
 * {
     background-color: rgb(9, 12, 34);
-    /* font-family: 'FuturaLTProDisplay'; */
+    font-family: 'Futura';
 }
 
 body {
@@ -30,7 +30,6 @@ header {
 
 #title {
   color: rgb(241, 238, 231);
-  font-family: 'Futura';
 }
 
 #imw-logo {
